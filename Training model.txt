@@ -1,0 +1,8 @@
+#DataFlair - Get the shape of the training and testing datasets
+print((x_train.shape[0], x_test.shape[0]))
+#DataFlair - Get the number of features extracted
+print(f'Features extracted: {x_train.shape[1]}')
+#DataFlair - Initialize the Multi Layer Perceptron Classifier
+model=MLPClassifier(alpha=0.01, batch_size=256, epsilon=1e-08, hidden_layer_sizes=(300,), learning_rate='adaptive', max_iter=500)
+#DataFlair - Train the model
+model.fit(x_train,y_train)

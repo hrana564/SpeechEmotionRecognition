@@ -1,0 +1,6 @@
+#DataFlair - Predict for the test set
+y_pred=model.predict(x_test)
+#DataFlair - Calculate the accuracy of our model
+accuracy=accuracy_score(y_true=y_test, y_pred=y_pred)
+#DataFlair - Print the accuracy
+print("Accuracy: {:.2f}%".format(accuracy*100))
